@@ -8,11 +8,11 @@ const questions = [
     {type: 'input', message: 'What is your email address?', name: 'email'},
     {type: 'input', message: "What is your project's name?", name: 'project'},
     {type: 'input', message: 'Write a short description of project:', name: 'description'},
-    {type: 'input', message: 'Enter in type of license for project:', name: 'license'},
-    {type: 'input', message: 'What command to use to install dependencies?', name: 'install'},
-    {type: 'input', message: 'What command to use to run tests?', name: 'tests'},
-    {type: 'input', message: 'What does user need to know about repo?', name: 'info'},
-    {type: 'input', message: 'What does user need to know to contribute?', name: 'contribute'}
+    {type: 'input', message: 'Enter in the type of license for project:', name: 'license'},
+    {type: 'input', message: 'Desired command to install dependencies:', name: 'install'},
+    {type: 'input', message: 'Desired command to run tests:', name: 'tests'},
+    {type: 'input', message: 'What does a user need to know about the repo?', name: 'info'},
+    {type: 'input', message: 'What does a user need to know to contribute?', name: 'contribute'}
 ];
 
 // calls function to initialize app
@@ -50,4 +50,7 @@ function writeToFile(fileName, saveData) {
     fs.writeFile(fileName, saveData, (err) => {
         if(err) console.log("err:", err);
     })
+
+    
+
 }
