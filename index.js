@@ -8,8 +8,11 @@ const questions = [
     {type: 'input', message: 'What is your email address?', name: 'email'},
     {type: 'input', message: "What is your project's name?", name: 'project'},
     {type: 'input', message: 'Write a short description of project:', name: 'description'},
+    //change to list (3 licenses)
     {type: 'input', message: 'Enter in the type of license for project:', name: 'license'},
+    //change to list (2-3 commands)
     {type: 'input', message: 'Desired command to install dependencies:', name: 'install'},
+    //change to list (2-3 tests)
     {type: 'input', message: 'Desired command to run tests:', name: 'tests'},
     {type: 'input', message: 'What does a user need to know about the repo?', name: 'info'},
     {type: 'input', message: 'What does a user need to know to contribute?', name: 'contribute'}
@@ -36,7 +39,7 @@ inquirer
         ${data.info},
         ${data.contribute},
         `
-
+        
         const fileName = `${data.project.toLowerCase()}.md`
 
         writeToFile(fileName, saveData)
@@ -51,6 +54,6 @@ function writeToFile(fileName, saveData) {
         if(err) console.log("err:", err);
     })
 
-    
+
 
 }
