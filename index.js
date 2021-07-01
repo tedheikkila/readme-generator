@@ -1,7 +1,8 @@
+// require statements
 const inquirer = require('inquirer');
 const fs = require('fs')
 
-// TODO: Create an array of questions for user input
+// array of questions for user input
 const questions = [
     {type: 'input', message: 'What is your GitHub username?', name: 'username'},
     {type: 'input', message: 'What is your email address?', name: 'email'},
@@ -14,14 +15,14 @@ const questions = [
     {type: 'input', message: 'What does user need to know to contribute?', name: 'contribute'}
 ];
 
-// TODO: Create a function to write README file
+// function to write README file
 function writeToFile(fileName, data) {}
 
-// TODO: Create a function to initialize app
+// initializes the app
 function init() {
 inquirer 
     .prompt(questions)
 }
 
-// Function call to initialize app
+// calls function to initialize app
 init();
