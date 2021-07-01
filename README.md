@@ -22,3 +22,6 @@ https://tedheikkila.github.io/hw9-readme-generator/
 
 Video Recording:
 <br>
+
+Screenshots:
+<br>
