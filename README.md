@@ -20,5 +20,5 @@ Deployed URL:
 https://tedheikkila.github.io/hw9-readme-generator/
 <br>
 
-Screenshots:
+Video Recording:
 <br>
