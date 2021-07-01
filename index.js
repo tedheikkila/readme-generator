@@ -15,14 +15,39 @@ const questions = [
     {type: 'input', message: 'What does user need to know to contribute?', name: 'contribute'}
 ];
 
-// function to write README file
-function writeToFile(fileName, data) {}
+// calls function to initialize app
+init();
 
 // initializes the app
 function init() {
 inquirer 
     .prompt(questions)
+
+    .then ((data) => {
+
+        const saveData = `
+        ${data.username},
+        ${data.email},
+        ${data.project},
+        ${data.description},
+        ${data.license},
+        ${data.install},
+        ${data.test},
+        ${data.info},
+        ${data.contribute},
+        `
+
+        const fileName = `${data.project.toLowerCase()}.md`
+
+        writeToFile(fileName, saveData)
+    })
+
 }
 
-// calls function to initialize app
-init();
+// function to write README file
+function writeToFile(fileName, saveData) {
+
+    fs.writeFile(fileName, saveData, (err) => {
+        if(err) console.log("err:", err);
+    })
+}
