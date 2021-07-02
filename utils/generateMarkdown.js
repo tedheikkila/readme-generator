@@ -23,7 +23,7 @@ function generateMarkdown(data) {
   - [Usage](#usage)
   - [Contributing](#contributing)
   - [License](#license)
-  - [Tests](#test)
+  - [Tests](#tests)
   - [Questions](#questions)
 
   ## Description
@@ -31,14 +31,16 @@ function generateMarkdown(data) {
 
   ## Installation
 
-  ${data.installation}
+  To install npm dependencies, please use this command >>  ${data.installation}
 
   ## Usage
 
+  Here's the essentials for what you need to know to use this app: 
   ${data.usage}
 
   ## Contributing
 
+  To contribute to this app, please follow these instructions: 
   ${data.contributing}
 
   ## License
@@ -47,18 +49,18 @@ function generateMarkdown(data) {
 
   ## Tests
 
-  ${data.tests}
+  To properly test the app, use this command >>  ${data.tests}
   
   ## Questions
 
-  -If you have any questions regarding the app, please contact me at: ${data.email}
+  -If you have any questions/concerns regarding the app, please contact me at: ${data.email}
 
-  -Additionally, you can find me at my GitHub profile here: https://github.com/${data.username}
+  -Additionally, you can find me on GitHub here: https://github.com/${data.username}
 
 `;
 }
 
+
 module.exports = {
   generateMarkdown
 }
-
