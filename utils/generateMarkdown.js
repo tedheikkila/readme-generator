@@ -1,4 +1,4 @@
-// function returns a license badge based on which license is passed in
+// function returns a license badge based on which license is selected;
 // if no license, returns an empty string
 function renderLicenseBadge(data) {
   if (data.license === "MIT") {
@@ -11,7 +11,6 @@ function renderLicenseBadge(data) {
     var license = ""
   }
   return license
-
 }
 
 // function returns the relevant license link;
@@ -29,7 +28,7 @@ function renderLicenseLink(data) {
   return license
 }
 
-// returns the license section of README; 
+// returns the license section of README (used this instruction method to prevent README clutter); 
 // if there is no license, return an empty string
 function renderLicenseSection(data) {
   if (data.license === "MIT") {
@@ -92,11 +91,9 @@ function generateMarkdown(data) {
   -If you have any questions/concerns regarding the app, please contact me at: ${data.email}
 
   -Additionally, you can find me on GitHub here: https://github.com/${data.username}
-
 `
 ;
 }
-
 
 module.exports = {
   generateMarkdown
