@@ -38,7 +38,7 @@ function renderLicenseSection(data) {
   } else if (data.license === "Mozilla") {
     var license = "Click on license button above to review license"
   } else if (data.license === "None") {
-    var license = ""
+    var license = "No applicable license used for this app"
   }
   return license
 }
@@ -60,39 +60,45 @@ function generateMarkdown(data) {
   - [Questions](#questions)
 
   ## Description
+
+  What is this app and what does it do:
+
   ${data.description}
 
   ## Installation
 
-  To install npm dependencies, please use this command >>  ${data.installation}
+  To install npm dependencies, please use this command >> ${data.installation}
 
   ## Usage
 
   Here's the essentials for what you need to know to use this app: 
+
   ${data.usage}
 
   ## Contributing
 
   To contribute to this app, please follow these instructions: 
+  
   ${data.contributing}
 
   ## License
 
   [![License: ${data.license}](${renderLicenseBadge(data)})](${renderLicenseLink(data)})
   
-  ${renderLicenseSection(data)}
+  * ${renderLicenseSection(data)}
 
   ## Tests
 
-  To properly test the app, use this command >>  ${data.tests}
+  To properly test the app, use this command >> ${data.tests}
   
   ## Questions
 
-  -If you have any questions/concerns regarding the app, please contact me at: ${data.email}
+  * If you have any questions/concerns regarding the app, please contact me at: ${data.email}
 
-  -Additionally, you can find me on GitHub here: https://github.com/${data.username}
+  * Additionally, you can find me on GitHub here: https://github.com/${data.username}
+
 `
-;
+
 }
 
 module.exports = {
