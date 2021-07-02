@@ -1,6 +1,7 @@
 // require statements
 const inquirer = require('inquirer');
 const fs = require('fs')
+const generate = require('./utils/generateMarkdown')
 
 // array of questions for user input
 const questions = [
@@ -29,6 +30,7 @@ inquirer
     .then ((data) => {
 
         const saveData = `
+        ${generate},
         ${data.username},
         ${data.email},
         ${data.project},
@@ -39,7 +41,7 @@ inquirer
         ${data.info},
         ${data.contribute},
         `
-        
+
         const fileName = `${data.project.toLowerCase()}.md`
 
         writeToFile(fileName, saveData)
