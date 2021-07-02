@@ -9,11 +9,12 @@ const questions = [
     {type: 'input', message: 'What is your GitHub username?', name: 'username'},
     {type: 'input', message: 'What is your email address?', name: 'email'},
     {type: 'input', message: 'Write a short description of the app:', name: 'description'},
-    {type: 'list', message: 'Select a license for the app:', choices: ['None', 'MIT', 'Apache 2.0', 'Mozilla'], name: 'license'},
-    {type: 'list', message: 'Desired command to install dependencies:', choices: ['npm install', 'npm i'], name: 'installation'},
-    {type: 'list', message: 'Desired command to run tests:', choices: ['npm test', 'npm t'], name: 'tests'},
+    {type: 'list', message: 'Select a license for the app:', choices: ['None', 'MIT', 'Apache', 'Mozilla'], name: 'license'},
+    {type: 'list', message: 'Desired command to install dependencies?', choices: ['npm install', 'npm i'], name: 'installation'},
+    {type: 'list', message: 'Desired command to run tests?', choices: ['npm test', 'npm t'], name: 'tests'},
     {type: 'input', message: 'What does a user need to know about the repo?', name: 'usage'},
-    {type: 'input', message: 'What does a user need to know to contribute?', name: 'contributing'}
+    {type: 'input', message: 'What does a user need to know to contribute?', name: 'contributing'},
+    {type: 'confirm', message: 'Compile results now?', name: 'compile'},
 ];
 
 // calls function to initialize app (node index.js)
