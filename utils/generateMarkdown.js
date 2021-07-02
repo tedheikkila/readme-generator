@@ -1,6 +1,16 @@
 // function returns a license badge based on which license is passed in
 // if no license, returns an empty string
-function renderLicenseBadge(license) {}
+function renderLicenseBadge(license) {
+  if (license === MIT) {
+    license = `https://img.shields.io/badge/License-MIT-yellow.svg`
+  } else if (license === Apache) {
+    license = `https://img.shields.io/badge/License-Apache%202.0-blue.svg`
+  } else if (license === Mozilla) {
+    license = `https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg`
+  } else if (license === None) {
+    license = ``
+  }
+}
 
 // function returns the relevant license link;
 // if there is no license, returns an empty string
@@ -45,7 +55,9 @@ function generateMarkdown(data) {
 
   ## License
 
-  ${data.license}
+  ${renderLicenseBadge}
+  ${renderLicenseLink}
+  ${renderLicenseSection}
 
   ## Tests
 
@@ -57,7 +69,8 @@ function generateMarkdown(data) {
 
   -Additionally, you can find me on GitHub here: https://github.com/${data.username}
 
-`;
+`
+;
 }
 
 
