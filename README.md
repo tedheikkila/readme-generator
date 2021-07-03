@@ -17,7 +17,7 @@ To initiate the app, the user must first pull this repo to their local level. Th
 
 Video Recording:
 <br>
-file:///Users/ted/Desktop/screen-capture.webm
+screen.webm
 <br>
 
 Screenshots:
