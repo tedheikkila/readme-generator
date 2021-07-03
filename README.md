@@ -17,7 +17,7 @@ To initiate the app, the user must first pull this repo to their local level. Th
 
 Video Recording:
 <br>
-<!-- https://tedheikkila.github.io/hw9-readme-generator/ -->
+file:///Users/ted/Desktop/screen-capture.webm
 <br>
 
 Screenshots:
