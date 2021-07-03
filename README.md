@@ -17,7 +17,7 @@ To initiate the app, the user must first pull this repo to their local level. Th
 
 Video Recording:
 <br>
-screen.webm
+Check out the video recording here: https://drive.google.com/file/d/1GoAJU-dwt6T93y7MFaRuaL1gi_YPvbzw/view?usp=sharing
 <br>
 
 Screenshots:
