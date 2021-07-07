@@ -1,4 +1,4 @@
-# hw9-readme-generator
+# readme-generator
 
 Description:
 <br>
